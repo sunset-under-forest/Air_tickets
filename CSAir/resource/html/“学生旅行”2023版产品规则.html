@@ -1,0 +1,481 @@
+
+<!-- saved from url=(0014)about:internet -->
+<html style="font-size: 148.933px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=0.9,maximum-scale=1,minimum-scale=0.5">
+<style>
+			html,
+			body,
+			div,
+			span,
+			iframe,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			blockquote,
+			pre,
+			a,
+			abbr,
+			acronym,
+			address,
+			big,
+			cite,
+			code,
+			del,
+			dfn,
+			em,
+			img,
+			ins,
+			kbd,
+			q,
+			s,
+			samp,
+			small,
+			strike,
+			strong,
+			sub,
+			sup,
+			tt,
+			var,
+			b,
+			u,
+			i,
+			center,
+			dl,
+			dt,
+			dd,
+			ol,
+			ul,
+			li,
+			fieldset,
+			form,
+			label,
+			legend,
+			table,
+			caption,
+			tbody,
+			tfoot,
+			thead,
+			tr,
+			th,
+			td,
+			article,
+			aside,
+			canvas,
+			details,
+			embed,
+			figure,
+			figcaption,
+			footer,
+			header,
+			hgroup,
+			menu,
+			nav,
+			output,
+			section,
+			summary,
+			time,
+			audio,
+			video {
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+
+
+			body {
+				background-color: #fff;
+				overflow-x: hidden;
+				-webkit-overflow-scrolling: touch;
+				height: 100%;
+			}
+
+			.header-nav-float.am-navbar {
+				background-color: #008acb;
+			}
+
+			.header-nav-float {
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 0.9rem;
+				width: 100%;
+				z-index: 10;
+			}
+
+			.am-navbar,
+			.am-navbar-left,
+			.am-navbar-right,
+			.am-navbar-title {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				align-items: center;
+			}
+
+			.am-navbar {
+				-ms-flex-align: center;
+				height: 0.9rem;
+				background-color: #008acb;
+				color: #fff;
+			}
+
+			.am-navbar-left {
+				-webkit-box-flex: 0.3;
+				-ms-flex: 0.3;
+				flex: 0.3;
+			}
+
+			.am-navbar-left {
+				padding-left: 0.3rem;
+				font-size: .32rem;
+			}
+
+			.am-navbar-left,
+			.am-navbar-right,
+			.am-navbar-title {
+				-webkit-box-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				height: 100%;
+				-ms-flex-align: center;
+			}
+
+			.am-navbar,
+			.am-navbar-left,
+			.am-navbar-right,
+			.am-navbar-title {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				align-items: center;
+			}
+
+			.am-navbar-title {
+				font-size: .32rem;
+				width: 80%;
+				overflow: hidden;
+				-o-text-overflow: ellipsis;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				display: block;
+				height: 0.9rem;
+				text-align: center;
+			}
+
+			.am-navbar-title {
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				font-size: .36rem;
+				white-space: nowrap;
+			}
+
+			.am-navbar-left,
+			.am-navbar-right,
+			.am-navbar-title {
+				-webkit-box-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				height: 100%;
+				-ms-flex-align: center;
+			}
+
+			.am-navbar-right {
+				margin-right: 0.3rem;
+				-webkit-box-flex: 0.3;
+				-ms-flex: 0.3;
+				flex: 0.3;
+			}
+
+			.am-navbar-right {
+				-webkit-box-pack: end;
+				-ms-flex-pack: end;
+				justify-content: flex-end;
+				font-size: .32rem;
+				margin-right: 0.3rem;
+			}
+			.am-navbar-title {
+				width: 100%;
+				padding: 10px;
+				-webkit-box-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				height: 100%;
+				-ms-flex-align: center;
+			}
+
+			.am-navbar-left .title_back {
+				width: 0.44rem;
+				height: 0.9rem;
+				display: inline-block;
+				background: url(data:image/png;base64,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) 50% no-repeat;
+				-webkit-background-size: 0.4rem auto;
+				background-size: 0.4rem auto;
+			}
+
+			i {
+				font-style: normal;
+			}
+		</style>
+<title>“学生旅行”2023版产品规则</title>
+</head>
+<body onload="pageLoadFun()" style="font-size: 0.28rem;background: #f9f9f9;line-height: 1.8;color: #686868;">
+<div id="bar-title-header1" class="header-nav-float  am-navbar am-navbar-dark" style="">
+<div style="display: flex;width:100%;">
+<div style="display: block;width:13%;" onclick="window.history.back()">
+<div class="am-navbar-left" role="button" onclick="window.history.back()">
+<i class="title_back"></i>
+</div>
+</div>
+<div style="display: block;width:83%;">
+<div class="am-navbar-title">“学生旅行”2023版产品规则</div>
+</div>
+<div style="display: block;width:13%;"></div>
+</div>
+</div>
+<div id="bar-title-header2" style="height: 0.9rem;"></div>
+<div style="padding : 0 4.6%;">
+<div style="padding-top: 0.12rem;">
+<p><strong>一、产品内容</strong></p>
+<p>购买“学生旅行”2023版产品的旅客，可在180天的有效期内享受购买8次一口价特价票及折上九折购票权益，并获得总价值300元的优惠券礼包。产品有效期内，学生与同行人在同一订单出票，可共享折上九折机票优惠。</p>
+<p>&nbsp;</p>
+<p><strong>二、产品购买</strong></p>
+<p>（一）适用人群<span style="color: #e53333;">（同时满足以下所有条件）</span></p>
+<p>1. 通过南航学生身份验证的会员。</p>
+<p>经国家教育行政主管部门批准的具备高等学历教育资格的高等学校中在读的全日制本科、专科、研究生学生可申请学生身份验证。</p>
+<p>全日制本科、专科学生在2023年申请认证，出生日期须在2000年1月1日-2006年12月31日期间。刚被录取的全日制本科、专科学生可通过上传录取通知书、学生证等带学生信息的通知或证件，申请人工验证。</p>
+<p>全日制研究生在2023年申请认证，出生日期须在1997年1月1日-2003年12月31日期间。</p>
+<p><span style="color: #e53333;">补充说明：</span>本、专科生的学生身份认证有效期截至23岁当年12月31日；如升学就读研究生，需重新进行研究生验证，研究生学生身份认证有效期为12个月，到期后需重新认证。</p>
+<p>点击<a href="https://m.csair.com/personal_new/studentCard/#/studentIdentityEntry" target="_blank" rel="noopener">这里</a>完成认证。</p>
+<p>2. 2023年购买本产品，出生日期须在1997年1月1日-2006年12月31日期间；2024年购买本产品，出生日期须在1998年1月1日-2007年12月31日期间。</p>
+<p>（二）购买方式：南航会员可通过官方移动渠道购买产品，购买时需填写乘机人及其有效证件信息，购买后限本人使用，不可更改乘机人。</p>
+<p>*有效证件说明：南航会员系统内登记的证件类型为“身份证”，包括18位的中华人民共和国居民身份证、港澳居民居住证及台湾居民居住证。</p>
+<p>（三）产品有效期：产品购买之日起180天内。</p>
+<p>（四）购买数量：产品仅支持为本人购买，每名会员只能获得1套有效产品，产品过期或退款后可重新购买。</p>
+<p>&nbsp;</p>
+<p><strong>三、产品使用</strong></p>
+<p>（一）一口价特价票</p>
+<p>用户在产品有效期内可以最多抢购8张国内指定航班（港澳台除外）一口价特价机票（税费另付）。<span style="color: #e53333;">每期特价票数量有限，售完即止。</span></p>
+<p>1．一口价价格：<span style="color: #e53333;">一口价特价票300元起，分多档定价，具体价格以实际查询为准。</span></p>
+<p>2. 出票渠道：南航官方移动渠道。</p>
+<p>3．适用航班：南航实际承运的国内指定航班（港澳台除外），不含代码共享航班，<span style="color: #e53333;">具体开放航线以系统查询为准。</span></p>
+<p>4．航班日期：产品有效期内，即<span style="color: #e53333;">购买后180天之内</span>。特价票不定期开放销售，<span style="color: #e53333;">具体开放日期以系统查询为准。</span></p>
+<p>5．舱位：指定经济舱。</p>
+<p>6．乘机人条件：产品限本人乘机，购票和乘机须使用有效证件。</p>
+<p>7．购票要求：产品限本人购票<span style="color: #e53333;">，须在航班起飞日期前20天-7天期间购票，</span>每张票限一个航段，最多可出8张票，每张一个航段，最多可有4段未使用航段。<span style="color: #e53333;">需要注意，因航班日期需在产品有效期内，最迟请在有效期结束前7天购买一口价特价票。</span></p>
+<p>8．机票不累积里程及升级航段。</p>
+<p>9．退改签规定：一口价特价票一旦出票，不得变更、不得签转；退票须通过南航APP办理，<span style="color: #e53333;">航班计划起飞前96小时（含）前提交退票，收取50%退票手续费；航班计划起飞前96小时后提交退票，收取100%退票手续费。</span>已退机票不计入8次出票额度。</p>
+<p>10．如发生航班变动，可联系南航客服95539办理免费变更或退票。</p>
+<p>*可变更时间范围：原航班计划起飞日期前6天、后6天及当天（共13天）内的南航实际承运航班，自愿/非自愿均不得签转至非南航实际承运的航空公司。</p>
+<p>*可变更航班范围：南航实际承运的同航程航班。</p>
+<p>*可变更舱位范围：普通经济舱。</p>
+<p>（二）折上九折购票优惠</p>
+<p>用户在产品有效期内可享受国内航班（港澳台除外）折上9折购票优惠，不限出票张数。用户本人与同行人在同一订单出票，可共享折上9折购票优惠。</p>
+<p>1．购票渠道：南航官方移动渠道。</p>
+<p>2．适用航班：南航实际承运的国内指定航班（港澳台除外），不含代码共享航班，<span style="color: #e53333;">具体开放航线以系统查询为准。</span></p>
+<p>3．折上九折航班日期：产品有效期内，即购买后180天之内。<span style="color: #e53333;">且不含</span>2023年7月10日至2023年8月20日、2023年9月26日至2023年10月8日，2024年1月25日-2024年2月24日，<span style="color: #e53333;">具体开放日期以系统查询为准。</span></p>
+<p>4．舱位：指定经济舱。</p>
+<p>5．购票要求：限学生旅行产品用户本人购票。</p>
+<p>6. 乘机人条件：学生旅行产品用户可在南航家庭专区维护最多12位家庭成员和8位同学为同行人。同行人与学生在同一订单出票时，享受相同的购票优惠。</p>
+<p>7．购票要求：<span style="color: #e53333;">须提前5个自然日（含）购票，</span>不限未使用航段数，不限出票张数。<span style="color: #e53333;">需要注意，因航班日期需在产品有效期内，最迟请在有效期结束前5天购买折上九折机票。</span></p>
+<p>8．机票按对应舱位累积里程及升级航段。</p>
+<p>9. 退改签规定：如学生旅行产品乘机人单独出票，则退改规则按普通客票执行。</p>
+<p>如学生旅行产品乘机人与同行人在同一订单出票，<span style="color: #e53333;">要求学生和同行人同退同改且仅支持在线上自助办理（非自愿情况除外），费用按普通客票执行。</span></p>
+<p>（三）300元优惠券礼包</p>
+<p>“学生旅行”产品用户可获得300元优惠券礼包，具体包含：</p>
+<table style="border-collapse: collapse;" border="1" width="100%;">
+<tbody>
+<tr style="text-align: center;">
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">优惠券</td>
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">面额</td>
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">数量</td>
+</tr>
+<tr style="text-align: center;">
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">机票优惠券</td>
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">20元</td>
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">5张</td>
+</tr>
+<tr style="text-align: center;">
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">行李优惠券</td>
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">20元</td>
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">4张</td>
+</tr>
+<tr style="text-align: center;">
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">休息室优惠券</td>
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">40元</td>
+<td style="border: 1px solid #bbbbbb; padding: 0.4rem;">3张</td>
+</tr>
+</tbody>
+</table>
+<p>1. 机票优惠券</p>
+<p>（1）机票优惠券仅在单程航段<span style="color: #e53333;">票面价满400元以上（不含）</span>时可使用（不含税），且<span style="color: #e53333;">不可与学生旅行一口价特价票、折上九折优惠同时使用。</span></p>
+<p>（2）适用舱位：C/D/I/S/B/M/H/U/A/L/E/V/Z/T/N。</p>
+<p>（3）券到账后180天内有效<span style="color: #e53333;">（无除外日期限制，有效期180天内任一日期均可使用）。</span></p>
+<p>（4）使用优惠券后发生任何自愿/非自愿退改时，优惠券作废，不可再次使用。</p>
+<p>（5）机票优惠券可转赠。</p>
+<p>（6）单张券一次性使用，不拆分、不提现，仅可抵扣机票费用，不与其他优惠活动叠加使用。一个订单只能使用一张优惠券，不能叠加使用。</p>
+<p>2. 行李优惠券</p>
+<p>（1）行李优惠券仅适用于南航官网、APP及小程序额外行李购买。</p>
+<p>（2）券到账后180天内有效<span style="color: #e53333;">（无除外日期限制，有效期180天内任一日期均可使用）</span>。</p>
+<p>（3）仅限本人使用，不可转赠。</p>
+<p>（4）单张券一次性使用，不拆分、不提现，仅可抵扣行李费用，不与其他优惠活动叠加使用。一个订单只能使用一张优惠券，不能叠加使用。</p>
+<p>3. 休息室优惠券</p>
+<p>（1）休息室券须于搭乘南航实际承运境内航班时使用。</p>
+<p>（2）仅适用于广州、深圳、上海、北京、海口、长沙、郑州、乌鲁木齐、沈阳、大连、揭阳、昆明、南宁、杭州、长春、珠海、重庆、哈尔滨、贵阳、武汉、南阳等地的<span style="color: #e53333;">南航自营明珠休息室。</span></p>
+<p>（3）休息室优惠券<span style="color: #e53333;">仅适用于</span>南航自营明珠休息室会员区、混舱使用区，<span style="color: #e53333;">不包含</span>优先安检通道、优先登机、贵宾车、休息室包间及休息室内其他需额外收费的服务。</p>
+<p>（4）券到账后180天内有效<span style="color: #e53333;">（无除外日期限制，有效期180天内任一日期均可使用）。</span></p>
+<p>（5）仅限本人使用，不可转赠。</p>
+<p>（6）单张券一次性使用，不拆分、不提现，仅可抵扣南航自营休息室费用，不与其他优惠活动叠加使用。一个订单只能使用一张优惠券，不能叠加使用。</p>
+<p>&nbsp;</p>
+<p><strong>四、产品售后</strong></p>
+<p>1．南航客服电话：95539。</p>
+<p>2．产品发票：产品开具一张发票（购买产品后可在南航APP预约开具发票，一口价特价票或折上九折购票权益后可正式开具），发票内容为“套票产品”。</p>
+<p>3．机票发票：按每张客票开具相应金额的发票或行程单。</p>
+<p>4．产品退订：产品购买后完全未使用权益，可在购买后12个月内退订；任一权益一经使用（包含出票后未出行、退票或变更的情况），均不得退订学生旅行产品。</p>
+<p>&nbsp;</p>
+<p><strong>五、特别说明</strong></p>
+<p>（一）航班编排调整属于民航正常业务范畴，若发生航班时刻更改、航班延误、航班取消或航程改变，可享受相应航班保护安排，但无其他补偿。</p>
+<p>（二）南航有权根据产品服务的实际情况，在法律允许的范围内，对本产品规则进行变动或调整，相关变动和调整将在官方渠道公布，并于公布时即时生效。</p>
+<p>（三）若发生违反产品规则或其他违反相关营销活动目的（包括但不限于利用本产品套利）的作弊行为，南航有权取消相关用户的产品权益及其所获利益，并保留追究其法律责任的权利。</p>
+<p>（四）请认真阅读上述规则，购买成功则视为同意产品规则；如对产品规则有异议，请谨慎购买。</p>
+</div>
+</div>
+
+<script type="text/javascript" async="" src="./“学生旅行”2023版产品规则_files/gs.js.下载"></script><script type="text/javascript">
+		function pageLoadFun() {
+			resize();
+			
+			var ua = navigator.userAgent;
+			var isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Linux') > -1; //android终端或者uc浏览器
+			var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+			if (ua.toLowerCase().match(/MicroMessenger/i) == "micromessenger") {
+			  //ios的ua中无miniProgram，但都有MicroMessenger（表示是微信浏览器）
+			} else {
+				if (!window.CSNativeObject) {
+					var os = function() {
+						var isWindowsPhone = /(?:Windows Phone)/.test(ua),
+							isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+							isAndroid = /(?:Android)/.test(ua),
+							isFireFox = /(?:Firefox)/.test(ua),
+							isChrome = /(?:Chrome|CriOS)/.test(ua),
+							isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox &&
+								/(?:Tablet)/.test(ua)),
+							isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+							isPc = !isPhone && !isAndroid && !isSymbian;
+						return {
+							isTablet: isTablet,
+							isPhone: isPhone,
+							isAndroid: isAndroid,
+							isPc: isPc
+						};
+					}();
+					if (os.isAndroid || os.isPhone) {
+						// console.log("手机")
+						document.getElementById("bar-title-header1").style.display = "";
+						document.getElementById("bar-title-header2").style.display = "";
+					} else if (os.isTablet) {
+						// console.log("平板")
+						document.getElementById("bar-title-header1").style.display = "";
+						document.getElementById("bar-title-header2").style.display = "";
+					} else if (os.isPc) {
+						// console.log("电脑")
+					}
+				}
+			}
+			
+
+
+			if (window.CSNativeObject || navigator.userAgent.toLowerCase().indexOf("miniprogram") != -1) {
+				var title = document.title;
+				window.CSNativeObject.nativeSetTitle(title);
+				var content = document.title;
+				var j = {
+					title: title,
+					description: content,
+					link: document.location.href,
+					imgUrl: "data:image/png;base64,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",
+					types: "weixinFriend,weixin,weibo",
+					successCallBack: "",
+					failCallBack: "",
+					weixinDescription: content,
+					friendDescription: content,
+					weiboDescription: content
+				};
+				var f = JSON.stringify(j);
+				window.CSNativeObject.saveShareContent(f);
+				window.CSNativeObject.shareItemEnable(1)
+			}
+
+			var g = window._gsq || [];
+			(function() {
+				var a = document.createElement("script");
+				a.type = "text/javascript";
+				a.async = true;
+				a.src = "https://app.csair.com/js/Clients/GWD-005238-698B3A/gs.js";
+				var b = document.getElementsByTagName("script")[0];
+				b.parentNode.insertBefore(a, b)
+			})()
+
+
+		}
+
+		function resize() {
+			! function(e) {
+				function t(a) {
+					if (i[a])
+						return i[a].exports;
+					var n = i[a] = {
+						exports: {},
+						id: a,
+						loaded: !1
+					};
+					return e[a].call(n.exports, n, n.exports, t),
+						n.loaded = !0,
+						n.exports
+				}
+				var i = {};
+				return t.m = e,
+					t.c = i,
+					t.p = "",
+					t(0)
+			}([function(e, t) {
+				"use strict";
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var i = window;
+				var benchmarkWidth = 750;
+				t["default"] = i.flex = function(e, t) {
+						var a = e || 100,
+							n = t || 1,
+							r = i.document,
+							o = navigator.userAgent,
+							d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),
+							l = o.match(/U3\/((\d+|\.){5,})/i),
+		 				c = l && parseInt(l[1].split(".").join(""), 10) >= 80,
+							p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi),
+							s = i.devicePixelRatio || 1;
+						p || d && d[1] > 534 || c || (s = 1);
+						var u = 1 / s,
+							m = r.querySelector('meta[name="viewport"]');
+						m || (m = r.createElement("meta"),
+							m.setAttribute("name", "viewport"),
+							r.head.appendChild(m));
+						// m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u);
+						var offsetWidth = i.document.documentElement.offsetWidth;
+						r.documentElement.style.fontSize = offsetWidth / benchmarkWidth * e + "px"
+					},
+					e.exports = t["default"]
+			}]);
+			flex(100, 1);
+		}
+	</script>
+
+</body></html>
