@@ -97,7 +97,10 @@ def get_min_price_a_day_multi_thread(q, date, dep_city=DEPARTURE_CITY, arr_city=
     :param date: 日期
     :return: 最低票价
     """
-    q.put((date, get_min_price_a_day(date, dep_city, arr_city)))
+    try:
+        q.put((date, get_min_price_a_day(date, dep_city, arr_city)))
+    except Exception as e:
+        print(e)
 
 
 def get_min_price(dep_city=DEPARTURE_CITY, arr_city=ARRIVAL_CITY, start_date=None, end_date=None):
